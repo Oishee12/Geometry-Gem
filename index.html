@@ -62,15 +62,26 @@
             </div>
           </div>
         </div>
-        <!-- Triangle card -->
+        <!-- Parallelogram card -->
         <div class="card w-96 bg-base-100 shadow-xl">
-          <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" />
+          <figure><img src="images/parallelogram.png" alt="Parallelogram" />
           </figure>
           <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-end">
-              <button class="btn btn-primary">Buy Now</button>
+            <h2 class="card-title">Parallelogram</h2>
+            <p class="text-2xl text-center">Area (A) = b x h</p>
+            <div>
+              <!-- parallelogram base -->
+              <input id="parallelogram-base" class="w-24 text-2xl rounded-sm p-2 bg-gray-300" type="text" placeholder="b">
+              <span class="mr-4 ml-2">cm</span>
+              <!-- parallelogram height -->
+              <input id="parallelogram-height" class="w-24 text-2xl rounded-sm p-2 bg-gray-300" type="text" placeholder="h">
+              <span>cm</span>
+            </div>
+            <div>
+              <p class="text-2xl">Area : <span id="parallelogram-area"></span> <span>cm</span> <sup>2</sup></p>
+            </div>
+            <div class="card-actions">
+              <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
             </div>
           </div>
         </div>
@@ -95,6 +106,7 @@
   </main>
   <script src="scripts/triangle-calculate.js"></script>
   <script src="scripts/rectangle-calculate.js"></script>
+  <script src="scripts/parallelogram-calculate.js"></script>
 </body>
 
 </html>
